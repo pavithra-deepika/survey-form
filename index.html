@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<h1 id="title"> Survey Form</h1>
+<h4 id="description">  Thank you for taking the time to help us improve the platform  </h4>
+<form id="survey-form" action="sucessfully">
+<div>
+        <label id="name-label">
+          Enter Your  Name:
+          <input id="name" name="name" type="text" required placeholder="Enter your Name"
+        /></label>
+        </div>
+        <div>
+        <label id="email-label"
+          >Enter Your Email:
+          <input id="email" name="email" type="email" required
+          placeholder="Enter your Email"
+        /></label>
+        </div>
+        <div>
+        <label id="number-label"
+          >Enter a number:
+          <input
+            id="number"
+            name="number"
+            type="number"
+            min="1"
+            max="12"
+            placeholder="Enter your number"
+            required
+        /></label>
+        </div>
+        <div>
+      <label>Which option best describes your current role?
+      <select id="dropdown">
+        <option>select</option>
+        <option>student</option>
+        <option>fulltime job</option>
+        <option>part time job</option>
+        </select>
+      </label>
+      </div>
+<div>
+      <p> Would you recommend freeCodeCamp to a friend? </p>
+        <label for="Definitely"
+          ><input
+            id="Definitely"
+            type="radio"
+            name="Definitely"
+            class="inline"
+            value="Definitely"
+            checked
+          />
+          Definitely</label
+        >
+           <label for="Maybe"
+          ><input
+            id="May be"
+            value="may be"
+            type="radio"
+            name="May be"
+            class="inline"
+          />
+          Maybe</label
+        >
+         <label for="not sure"
+          ><input
+            id="notsure"
+            type="radio"
+            name="notsure"
+            class="inline"
+            value="notsure"
+          />
+          Not Sure</label
+        >
+</div>
+      </label>
+      <div>
+      <p>  What would you like to see improved? (Check all that apply) </p>
+      <div>
+        <input
+            id="frontend"
+            type="checkbox"
+            name="notsure"
+            class="inline"
+            value="notsure"
+          />
+          Front-end Project
+        </div>
+        <div>
+         <input
+            id="backend"
+            type="checkbox"
+            name="notsure"
+            class="inline"
+            value="notsure"
+          />
+          backend project
+      </div>
+      <div>
+        <p>Any comments or suggestions?</p>
+      <textarea
+            id="form"
+            name="form"
+            rows="3"
+            cols="30"
+            placeholder="I like coding on the beach..."
+          ></textarea>
+      </div>
+      <button id="submit"> submit </button>
+      </div>
+          </form>
+      </body>
+</html>
+ 
